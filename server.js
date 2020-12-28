@@ -9,7 +9,8 @@ const app = express(); // Server App Instance
 app.use(bodyParser.urlencoded({extended:true}));
 
 //connect to mongoDB
-const db = 'mongodb://localhost:27017/smart-shopping-list';
+// const db = 'mongodb://localhost:27017/smart-shopping-list';
+const db = 'mongodb+srv://crazydevz:Dezong%4041@cluster0.5j8tc.mongodb.net/smart-shopping-list?retryWrites=true'
 mongoose.promise = global.promise;
 
 // connect mongoose to database
