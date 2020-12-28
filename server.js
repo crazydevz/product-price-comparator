@@ -36,6 +36,7 @@ app.get('/', (req, res, next) => {
 });
 
 // Finally, bring the server instance up
-app.listen(config.PORT, config.HOST, function () {
-  console.log(`App listening on http://${config.HOST}:${config.PORT}`);
+const port = process.env.PORT;
+app.listen(port, function () {
+  console.log(`App listening on ${port}`);
 });
